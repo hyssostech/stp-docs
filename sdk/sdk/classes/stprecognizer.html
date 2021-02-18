@@ -1,0 +1,826 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>StpRecognizer | Sketch-thru-Plan SDK - v0.4.0</title>
+	<meta name="description" content="Documentation for Sketch-thru-Plan SDK - v0.4.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">Sketch-thru-Plan SDK - v0.4.0</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="stprecognizer.html">StpRecognizer</a>
+				</li>
+			</ul>
+			<h1>Class StpRecognizer</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Commands and events to interact with STP</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">StpRecognizer</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="stprecognizer.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="stprecognizer.html#oninkprocessed" class="tsd-kind-icon">on<wbr>Ink<wbr>Processed</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="stprecognizer.html#onpendown" class="tsd-kind-icon">on<wbr>Pen<wbr>Down</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="stprecognizer.html#onspeechrecognized" class="tsd-kind-icon">on<wbr>Speech<wbr>Recognized</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="stprecognizer.html#onstpmessage" class="tsd-kind-icon">on<wbr>Stp<wbr>Message</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="stprecognizer.html#onsymboladded" class="tsd-kind-icon">on<wbr>Symbol<wbr>Added</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="stprecognizer.html#onsymboldeleted" class="tsd-kind-icon">on<wbr>Symbol<wbr>Deleted</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="stprecognizer.html#onsymbolmodified" class="tsd-kind-icon">on<wbr>Symbol<wbr>Modified</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="stprecognizer.html#servicename" class="tsd-kind-icon">service<wbr>Name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="stprecognizer.html#stpconnector" class="tsd-kind-icon">stp<wbr>Connector</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="stprecognizer.html#addsymbol" class="tsd-kind-icon">add<wbr>Symbol</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="stprecognizer.html#choosealternate" class="tsd-kind-icon">choose<wbr>Alternate</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="stprecognizer.html#connect" class="tsd-kind-icon">connect</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="stprecognizer.html#deletesymbol" class="tsd-kind-icon">delete<wbr>Symbol</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="stprecognizer.html#sendink" class="tsd-kind-icon">send<wbr>Ink</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="stprecognizer.html#sendpendown" class="tsd-kind-icon">send<wbr>Pen<wbr>Down</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="stprecognizer.html#sendspeechrecognition" class="tsd-kind-icon">send<wbr>Speech<wbr>Recognition</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="stprecognizer.html#updatesymbol" class="tsd-kind-icon">update<wbr>Symbol</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Stp<wbr>Recognizer<span class="tsd-signature-symbol">(</span>stpConnector<span class="tsd-signature-symbol">: </span><a href="../interfaces/istpconnector.html" class="tsd-signature-type">IStpConnector</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="stprecognizer.html" class="tsd-signature-type">StpRecognizer</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/hyssostech/stp-js/blob/a5ecea5/src/stprecognizer.ts#L11">stprecognizer.ts:11</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Construct STP SDK object</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>stpConnector: <a href="../interfaces/istpconnector.html" class="tsd-signature-type">IStpConnector</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Connector object through which the SDK communicates with STP</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="stprecognizer.html" class="tsd-signature-type">StpRecognizer</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="oninkprocessed" class="tsd-anchor"></a>
+					<h3>on<wbr>Ink<wbr>Processed</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Ink<wbr>Processed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/hyssostech/stp-js/blob/a5ecea5/src/stprecognizer.ts#L300">stprecognizer.ts:300</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Sketched gestures have either been processed, or failed to process and can be cleared of the UI</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="onpendown" class="tsd-anchor"></a>
+					<h3>on<wbr>Pen<wbr>Down</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Pen<wbr>Down<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>time<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, coord<span class="tsd-signature-symbol">: </span><a href="latlon.html" class="tsd-signature-type">LatLon</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/hyssostech/stp-js/blob/a5ecea5/src/stprecognizer.ts#L293">stprecognizer.ts:293</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A pen down action was performed by a user</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>Pen down time</p>
+							</dd>
+							<dt>param</dt>
+							<dd><p>Pen down map coordinate</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="onspeechrecognized" class="tsd-anchor"></a>
+					<h3>on<wbr>Speech<wbr>Recognized</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Speech<wbr>Recognized<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>phrases<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/hyssostech/stp-js/blob/a5ecea5/src/stprecognizer.ts#L306">stprecognizer.ts:306</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>User speech was successfully transcribed</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>Phrases that were recognized</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="onstpmessage" class="tsd-anchor"></a>
+					<h3>on<wbr>Stp<wbr>Message</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Stp<wbr>Message<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>msg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, level<span class="tsd-signature-symbol">: </span><a href="../enums/stpmessagelevel.html" class="tsd-signature-type">StpMessageLevel</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/hyssostech/stp-js/blob/a5ecea5/src/stprecognizer.ts#L355">stprecognizer.ts:355</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Message indicating an STP issue or event to be displayed to the user</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>Message describing the issue</p>
+							</dd>
+							<dt>param</dt>
+							<dd><p>Type of message (see the corresponding enum)</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="onsymboladded" class="tsd-anchor"></a>
+					<h3>on<wbr>Symbol<wbr>Added</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Symbol<wbr>Added<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>alternates<span class="tsd-signature-symbol">: </span><a href="stpsymbol.html" class="tsd-signature-type">StpSymbol</a><span class="tsd-signature-symbol">[]</span>, isUndo<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/hyssostech/stp-js/blob/a5ecea5/src/stprecognizer.ts#L316">stprecognizer.ts:316</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A new symbol has been added</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>One or more symbol interpretations, ranked by likelihood</p>
+							</dd>
+							<dt>param</dt>
+							<dd><p>True if this is the result of an undo operation (of a symbol delete)</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="onsymboldeleted" class="tsd-anchor"></a>
+					<h3>on<wbr>Symbol<wbr>Deleted</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Symbol<wbr>Deleted<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>poid<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, isUndo<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/hyssostech/stp-js/blob/a5ecea5/src/stprecognizer.ts#L333">stprecognizer.ts:333</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A symbol has been deleted</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>Unique symbol identifier of the deleted symbol</p>
+							</dd>
+							<dt>param</dt>
+							<dd><p>True if this is the result of an undo operation (of a symbol add)</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="onsymbolmodified" class="tsd-anchor"></a>
+					<h3>on<wbr>Symbol<wbr>Modified</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Symbol<wbr>Modified<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>poid<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, symbol<span class="tsd-signature-symbol">: </span><a href="stpsymbol.html" class="tsd-signature-type">StpSymbol</a>, isUndo<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/hyssostech/stp-js/blob/a5ecea5/src/stprecognizer.ts#L325">stprecognizer.ts:325</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A symbol has been modified</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>Unique symbol identifier of the modified symbol</p>
+							</dd>
+							<dt>param</dt>
+							<dd><p>Symbol added</p>
+							</dd>
+							<dt>param</dt>
+							<dd><p>True if this is the result of an undo operation (of a symbol modify)</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="servicename" class="tsd-anchor"></a>
+					<h3>service<wbr>Name</h3>
+					<div class="tsd-signature tsd-kind-icon">service<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/hyssostech/stp-js/blob/a5ecea5/src/stprecognizer.ts#L11">stprecognizer.ts:11</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="stpconnector" class="tsd-anchor"></a>
+					<h3>stp<wbr>Connector</h3>
+					<div class="tsd-signature tsd-kind-icon">stp<wbr>Connector<span class="tsd-signature-symbol">:</span> <a href="../interfaces/istpconnector.html" class="tsd-signature-type">IStpConnector</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/hyssostech/stp-js/blob/a5ecea5/src/stprecognizer.ts#L10">stprecognizer.ts:10</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="addsymbol" class="tsd-anchor"></a>
+					<h3>add<wbr>Symbol</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Symbol<span class="tsd-signature-symbol">(</span>symbol<span class="tsd-signature-symbol">: </span><a href="stpsymbol.html" class="tsd-signature-type">StpSymbol</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/hyssostech/stp-js/blob/a5ecea5/src/stprecognizer.ts#L170">stprecognizer.ts:170</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Request that a symbol be added by STP. The actual addition should only happen when STP responds with SymbolAdded</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>symbol: <a href="stpsymbol.html" class="tsd-signature-type">StpSymbol</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Symbol to be added</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="choosealternate" class="tsd-anchor"></a>
+					<h3>choose<wbr>Alternate</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">choose<wbr>Alternate<span class="tsd-signature-symbol">(</span>poid<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, nBestIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/hyssostech/stp-js/blob/a5ecea5/src/stprecognizer.ts#L203">stprecognizer.ts:203</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Pick an alternate recognition for a symbol/task. The STP runtime responds with an object chosen notification</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>poid: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Unique identifie of the symbol for which an alternate is being picked</p>
+									</div>
+								</li>
+								<li>
+									<h5>nBestIndex: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Index indicating which of the current alternates is selected</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="connect" class="tsd-anchor"></a>
+					<h3>connect</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">connect<span class="tsd-signature-symbol">(</span>serviceName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, timeout<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/hyssostech/stp-js/blob/a5ecea5/src/stprecognizer.ts#L30">stprecognizer.ts:30</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Connect to the STP engine
+									Important: the event function properties need to be assigned to handlers <em>before</em> this method is called</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>serviceName: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Name of this component / service</p>
+									</div>
+								</li>
+								<li>
+									<h5>timeout: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Number fo seconds to wait for a connection before failing</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="deletesymbol" class="tsd-anchor"></a>
+					<h3>delete<wbr>Symbol</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">delete<wbr>Symbol<span class="tsd-signature-symbol">(</span>poid<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/hyssostech/stp-js/blob/a5ecea5/src/stprecognizer.ts#L192">stprecognizer.ts:192</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Request a symbol deletion from STP. The actual removal should only happen when STP responds with SymbolDeleted</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>poid: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Unique identifier of the symbol to delete</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="sendink" class="tsd-anchor"></a>
+					<h3>send<wbr>Ink</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">send<wbr>Ink<span class="tsd-signature-symbol">(</span>pixelBoundsWindow<span class="tsd-signature-symbol">: </span><a href="size.html" class="tsd-signature-type">Size</a>, topLeftGeoMap<span class="tsd-signature-symbol">: </span><a href="latlon.html" class="tsd-signature-type">LatLon</a>, bottomRightGeoMap<span class="tsd-signature-symbol">: </span><a href="latlon.html" class="tsd-signature-type">LatLon</a>, strokePoints<span class="tsd-signature-symbol">: </span><a href="latlon.html" class="tsd-signature-type">LatLon</a><span class="tsd-signature-symbol">[]</span>, timeStrokeStart<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, timeStrokeEnd<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, intersectedPoids<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/hyssostech/stp-js/blob/a5ecea5/src/stprecognizer.ts#L128">stprecognizer.ts:128</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Send sketched gesture to STP</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>pixelBoundsWindow: <a href="size.html" class="tsd-signature-type">Size</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Map region screen bounds in pixels</p>
+									</div>
+								</li>
+								<li>
+									<h5>topLeftGeoMap: <a href="latlon.html" class="tsd-signature-type">LatLon</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Map top, left coordinates</p>
+									</div>
+								</li>
+								<li>
+									<h5>bottomRightGeoMap: <a href="latlon.html" class="tsd-signature-type">LatLon</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Map bottom, right coordinates</p>
+									</div>
+								</li>
+								<li>
+									<h5>strokePoints: <a href="latlon.html" class="tsd-signature-type">LatLon</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Coordinates of the sketched gesture</p>
+									</div>
+								</li>
+								<li>
+									<h5>timeStrokeStart: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Time the first point was placed</p>
+									</div>
+								</li>
+								<li>
+									<h5>timeStrokeEnd: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Time the last point was placed</p>
+									</div>
+								</li>
+								<li>
+									<h5>intersectedPoids: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Symbol Ids of all the symbols that were intersected by the sketched gesture - used for editing operations,
+										e.g. when user sketches over a symbol and says &quot;delete this&quot;</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="sendpendown" class="tsd-anchor"></a>
+					<h3>send<wbr>Pen<wbr>Down</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">send<wbr>Pen<wbr>Down<span class="tsd-signature-symbol">(</span>location<span class="tsd-signature-symbol">: </span><a href="latlon.html" class="tsd-signature-type">LatLon</a>, timestamp<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/hyssostech/stp-js/blob/a5ecea5/src/stprecognizer.ts#L107">stprecognizer.ts:107</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Advertise that the user has started a sketched gesture</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>location: <a href="latlon.html" class="tsd-signature-type">LatLon</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Map coordinate of the first point</p>
+									</div>
+								</li>
+								<li>
+									<h5>timestamp: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Time the first point was placed - ISO 8601</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="sendspeechrecognition" class="tsd-anchor"></a>
+					<h3>send<wbr>Speech<wbr>Recognition</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">send<wbr>Speech<wbr>Recognition<span class="tsd-signature-symbol">(</span>recoList<span class="tsd-signature-symbol">: </span><a href="../interfaces/ispeechrecoitem.html" class="tsd-signature-type">ISpeechRecoItem</a><span class="tsd-signature-symbol">[]</span>, startTime<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, endTime<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/hyssostech/stp-js/blob/a5ecea5/src/stprecognizer.ts#L154">stprecognizer.ts:154</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Send to STP the transcribed speech results, as obtained by a speech recognizer, or typed by the user</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>recoList: <a href="../interfaces/ispeechrecoitem.html" class="tsd-signature-type">ISpeechRecoItem</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>List of recognition hypothesis</p>
+									</div>
+								</li>
+								<li>
+									<h5>startTime: <span class="tsd-signature-type">Date</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Time speech started - ISO 8601</p>
+									</div>
+								</li>
+								<li>
+									<h5>endTime: <span class="tsd-signature-type">Date</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Time speech ended- ISO 8601</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="updatesymbol" class="tsd-anchor"></a>
+					<h3>update<wbr>Symbol</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">update<wbr>Symbol<span class="tsd-signature-symbol">(</span>poid<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, symbol<span class="tsd-signature-symbol">: </span><a href="stpsymbol.html" class="tsd-signature-type">StpSymbol</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/hyssostech/stp-js/blob/a5ecea5/src/stprecognizer.ts#L181">stprecognizer.ts:181</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Request that a symbol be updated by STP. The actual update should only happen when STP responds with SymbolModified</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>poid: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Unique identifier of the symbol to delete</p>
+									</div>
+								</li>
+								<li>
+									<h5>symbol: <a href="stpsymbol.html" class="tsd-signature-type">StpSymbol</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Symbol to be updated</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-enum">
+						<a href="../enums/stpmessagelevel.html" class="tsd-kind-icon">Stp<wbr>Message<wbr>Level</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="interval.html" class="tsd-kind-icon">Interval</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="latlon.html" class="tsd-kind-icon">Lat<wbr>Lon</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="location.html" class="tsd-kind-icon">Location</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="sidc.html" class="tsd-kind-icon">Sidc</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="size.html" class="tsd-kind-icon">Size</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="stpitem.html" class="tsd-kind-icon">Stp<wbr>Item</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class">
+						<a href="stprecognizer.html" class="tsd-kind-icon">Stp<wbr>Recognizer</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="stprecognizer.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="stprecognizer.html#oninkprocessed" class="tsd-kind-icon">on<wbr>Ink<wbr>Processed</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="stprecognizer.html#onpendown" class="tsd-kind-icon">on<wbr>Pen<wbr>Down</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="stprecognizer.html#onspeechrecognized" class="tsd-kind-icon">on<wbr>Speech<wbr>Recognized</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="stprecognizer.html#onstpmessage" class="tsd-kind-icon">on<wbr>Stp<wbr>Message</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="stprecognizer.html#onsymboladded" class="tsd-kind-icon">on<wbr>Symbol<wbr>Added</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="stprecognizer.html#onsymboldeleted" class="tsd-kind-icon">on<wbr>Symbol<wbr>Deleted</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="stprecognizer.html#onsymbolmodified" class="tsd-kind-icon">on<wbr>Symbol<wbr>Modified</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="stprecognizer.html#servicename" class="tsd-kind-icon">service<wbr>Name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="stprecognizer.html#stpconnector" class="tsd-kind-icon">stp<wbr>Connector</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="stprecognizer.html#addsymbol" class="tsd-kind-icon">add<wbr>Symbol</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="stprecognizer.html#choosealternate" class="tsd-kind-icon">choose<wbr>Alternate</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="stprecognizer.html#connect" class="tsd-kind-icon">connect</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="stprecognizer.html#deletesymbol" class="tsd-kind-icon">delete<wbr>Symbol</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="stprecognizer.html#sendink" class="tsd-kind-icon">send<wbr>Ink</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="stprecognizer.html#sendpendown" class="tsd-kind-icon">send<wbr>Pen<wbr>Down</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="stprecognizer.html#sendspeechrecognition" class="tsd-kind-icon">send<wbr>Speech<wbr>Recognition</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="stprecognizer.html#updatesymbol" class="tsd-kind-icon">update<wbr>Symbol</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-class">
+						<a href="stpsymbol.html" class="tsd-kind-icon">Stp<wbr>Symbol</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="stpwebsocketsconnector.html" class="tsd-kind-icon">Stp<wbr>Web<wbr>Sockets<wbr>Connector</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/ispeechrecoitem.html" class="tsd-kind-icon">ISpeech<wbr>Reco<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/ispeechrecoresult.html" class="tsd-kind-icon">ISpeech<wbr>Reco<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/istpconnector.html" class="tsd-kind-icon">IStp<wbr>Connector</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/istpconnectorconstructor.html" class="tsd-kind-icon">IStp<wbr>Connector<wbr>Constructor</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/onspeechrecognizedevent.html" class="tsd-kind-icon">On<wbr>Speech<wbr>Recognized<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/onstpmessageevent.html" class="tsd-kind-icon">On<wbr>Stp<wbr>Message<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/stpmessage.html" class="tsd-kind-icon">Stp<wbr>Message</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/symboladdedevent.html" class="tsd-kind-icon">Symbol<wbr>Added<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="../globals.html#rewind" class="tsd-kind-icon">rewind</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="../globals.html#rewindring" class="tsd-kind-icon">rewind<wbr>Ring</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="../globals.html#rewindrings" class="tsd-kind-icon">rewind<wbr>Rings</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

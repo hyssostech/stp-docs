@@ -1,4 +1,4 @@
-<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>StpSymbol | Sketch-thru-Plan SDK - v0.6.1-alpha.0</title><meta name="description" content="Documentation for Sketch-thru-Plan SDK"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><script defer src="../assets/main.js"></script><script async src="../assets/search.js" id="tsd-search-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
+<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>StpTaskOrgUnit | Sketch-thru-Plan SDK - v0.6.1-alpha.0</title><meta name="description" content="Documentation for Sketch-thru-Plan SDK"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><script defer src="../assets/main.js"></script><script async src="../assets/search.js" id="tsd-search-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
 <div class="tsd-toolbar-contents container">
 <div class="table-cell" id="tsd-search" data-base="..">
 <div class="field"><label for="tsd-search-field" class="tsd-widget tsd-toolbar-icon search no-caption"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M15.7824 13.833L12.6666 10.7177C12.5259 10.5771 12.3353 10.499 12.1353 10.499H11.6259C12.4884 9.39596 13.001 8.00859 13.001 6.49937C13.001 2.90909 10.0914 0 6.50048 0C2.90959 0 0 2.90909 0 6.49937C0 10.0896 2.90959 12.9987 6.50048 12.9987C8.00996 12.9987 9.39756 12.4863 10.5008 11.6239V12.1332C10.5008 12.3332 10.5789 12.5238 10.7195 12.6644L13.8354 15.7797C14.1292 16.0734 14.6042 16.0734 14.8948 15.7797L15.7793 14.8954C16.0731 14.6017 16.0731 14.1267 15.7824 13.833ZM6.50048 10.499C4.29094 10.499 2.50018 8.71165 2.50018 6.49937C2.50018 4.29021 4.28781 2.49976 6.50048 2.49976C8.71001 2.49976 10.5008 4.28708 10.5008 6.49937C10.5008 8.70852 8.71314 10.499 6.50048 10.499Z" fill="var(--color-text)"></path></svg></label><input type="text" id="tsd-search-field" aria-label="Search"/></div>
@@ -13,21 +13,19 @@
 <div class="tsd-page-title">
 <ul class="tsd-breadcrumb">
 <li><a href="../modules.html">Sketch-thru-Plan SDK</a></li>
-<li><a href="StpSymbol.html">StpSymbol</a></li></ul>
-<h1>Class StpSymbol</h1></div>
+<li><a href="StpTaskOrgUnit.html">StpTaskOrgUnit</a></li></ul>
+<h1>Class StpTaskOrgUnit</h1></div>
 <section class="tsd-panel tsd-comment">
-<div class="tsd-comment tsd-typography"><p>STP military symbol</p>
+<div class="tsd-comment tsd-typography"><p>STP Task Org (ORBAT) Unit</p>
 </div></section>
 <section class="tsd-panel tsd-hierarchy">
 <h4>Hierarchy</h4>
 <ul class="tsd-hierarchy">
-<li><a href="StpItem.html" class="tsd-signature-type tsd-kind-class">StpItem</a>
+<li><a href="StpSymbol.html" class="tsd-signature-type tsd-kind-class">StpSymbol</a>
 <ul class="tsd-hierarchy">
-<li><span class="target">StpSymbol</span>
-<ul class="tsd-hierarchy">
-<li><a href="StpTaskOrgUnit.html" class="tsd-signature-type tsd-kind-class">StpTaskOrgUnit</a></li></ul></li></ul></li></ul></section><aside class="tsd-sources">
+<li><span class="target">StpTaskOrgUnit</span></li></ul></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/hyssostech/stp-js/blob/6e0c161/src/stptypes.ts#L103">stptypes.ts:103</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/hyssostech/stp-js/blob/6e0c161/src/stptypes.ts#L335">stptypes.ts:335</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -35,58 +33,63 @@
 <div class="tsd-accordion-details">
 <section class="tsd-index-section">
 <h3 class="tsd-index-heading">Constructors</h3>
-<div class="tsd-index-list"><a href="StpSymbol.html#constructor" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="#4D7FFF" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12" id="icon-512-path"></rect><path d="M11.898 16.1201C11.098 16.1201 10.466 15.8961 10.002 15.4481C9.53803 15.0001 9.30603 14.3841 9.30603 13.6001V9.64012C9.30603 8.85612 9.53803 8.24012 10.002 7.79212C10.466 7.34412 11.098 7.12012 11.898 7.12012C12.682 7.12012 13.306 7.34812 13.77 7.80412C14.234 8.25212 14.466 8.86412 14.466 9.64012H13.386C13.386 9.14412 13.254 8.76412 12.99 8.50012C12.734 8.22812 12.37 8.09212 11.898 8.09212C11.426 8.09212 11.054 8.22412 10.782 8.48812C10.518 8.75212 10.386 9.13212 10.386 9.62812V13.6001C10.386 14.0961 10.518 14.4801 10.782 14.7521C11.054 15.0161 11.426 15.1481 11.898 15.1481C12.37 15.1481 12.734 15.0161 12.99 14.7521C13.254 14.4801 13.386 14.0961 13.386 13.6001H14.466C14.466 14.3761 14.234 14.9921 13.77 15.4481C13.306 15.8961 12.682 16.1201 11.898 16.1201Z" fill="var(--color-text)" id="icon-512-text"></path></svg><span>constructor</span></a>
+<div class="tsd-index-list"><a href="StpTaskOrgUnit.html#constructor" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="#4D7FFF" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12" id="icon-512-path"></rect><path d="M11.898 16.1201C11.098 16.1201 10.466 15.8961 10.002 15.4481C9.53803 15.0001 9.30603 14.3841 9.30603 13.6001V9.64012C9.30603 8.85612 9.53803 8.24012 10.002 7.79212C10.466 7.34412 11.098 7.12012 11.898 7.12012C12.682 7.12012 13.306 7.34812 13.77 7.80412C14.234 8.25212 14.466 8.86412 14.466 9.64012H13.386C13.386 9.14412 13.254 8.76412 12.99 8.50012C12.734 8.22812 12.37 8.09212 11.898 8.09212C11.426 8.09212 11.054 8.22412 10.782 8.48812C10.518 8.75212 10.386 9.13212 10.386 9.62812V13.6001C10.386 14.0961 10.518 14.4801 10.782 14.7521C11.054 15.0161 11.426 15.1481 11.898 15.1481C12.37 15.1481 12.734 15.0161 12.99 14.7521C13.254 14.4801 13.386 14.0961 13.386 13.6001H14.466C14.466 14.3761 14.234 14.9921 13.77 15.4481C13.306 15.8961 12.682 16.1201 11.898 16.1201Z" fill="var(--color-text)" id="icon-512-text"></path></svg><span>constructor</span></a>
 </div></section>
 <section class="tsd-index-section">
 <h3 class="tsd-index-heading">Properties</h3>
-<div class="tsd-index-list"><a href="StpSymbol.html#affiliation" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="#FF984D" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12" id="icon-1024-path"></rect><path d="M9.354 16V7.24H12.174C12.99 7.24 13.638 7.476 14.118 7.948C14.606 8.412 14.85 9.036 14.85 9.82C14.85 10.604 14.606 11.232 14.118 11.704C13.638 12.168 12.99 12.4 12.174 12.4H10.434V16H9.354ZM10.434 11.428H12.174C12.646 11.428 13.022 11.284 13.302 10.996C13.59 10.7 13.734 10.308 13.734 9.82C13.734 9.324 13.59 8.932 13.302 8.644C13.022 8.356 12.646 8.212 12.174 8.212H10.434V11.428Z" fill="var(--color-text)" id="icon-1024-text"></path></svg><span>affiliation</span></a>
-<a href="StpSymbol.html#alt" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>alt</span></a>
-<a href="StpSymbol.html#altitude" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>altitude</span></a>
-<a href="StpSymbol.html#branch" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>branch</span></a>
-<a href="StpSymbol.html#confidence" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>confidence</span></a>
-<a href="StpSymbol.html#creatorRole" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>creator<wbr/>Role</span></a>
-<a href="StpSymbol.html#description" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>description</span></a>
-<a href="StpSymbol.html#designator1" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>designator1</span></a>
-<a href="StpSymbol.html#designator2" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>designator2</span></a>
-<a href="StpSymbol.html#echelon" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>echelon</span></a>
-<a href="StpSymbol.html#fsTYPE" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>fsTYPE</span></a>
-<a href="StpSymbol.html#fullDescription" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>full<wbr/>Description</span></a>
-<a href="StpSymbol.html#interval" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>interval</span></a>
-<a href="StpSymbol.html#location" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>location</span></a>
-<a href="StpSymbol.html#maxAltitude" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>max<wbr/>Altitude</span></a>
-<a href="StpSymbol.html#minAltitude" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>min<wbr/>Altitude</span></a>
-<a href="StpSymbol.html#modifier" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>modifier</span></a>
-<a href="StpSymbol.html#parent" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>parent</span></a>
-<a href="StpSymbol.html#parentCoa" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>parent<wbr/>Coa</span></a>
-<a href="StpSymbol.html#poid" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>poid</span></a>
-<a href="StpSymbol.html#shortDescription" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>short<wbr/>Description</span></a>
-<a href="StpSymbol.html#sidc" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>sidc</span></a>
-<a href="StpSymbol.html#status" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>status</span></a>
-<a href="StpSymbol.html#strength" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>strength</span></a>
-<a href="StpSymbol.html#timeFrom" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>time<wbr/>From</span></a>
-<a href="StpSymbol.html#timeTo" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>time<wbr/>To</span></a>
-<a href="StpSymbol.html#toUnitPoid" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>to<wbr/>Unit<wbr/>Poid</span></a>
+<div class="tsd-index-list"><a href="StpTaskOrgUnit.html#affiliation" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="#FF984D" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12" id="icon-1024-path"></rect><path d="M9.354 16V7.24H12.174C12.99 7.24 13.638 7.476 14.118 7.948C14.606 8.412 14.85 9.036 14.85 9.82C14.85 10.604 14.606 11.232 14.118 11.704C13.638 12.168 12.99 12.4 12.174 12.4H10.434V16H9.354ZM10.434 11.428H12.174C12.646 11.428 13.022 11.284 13.302 10.996C13.59 10.7 13.734 10.308 13.734 9.82C13.734 9.324 13.59 8.932 13.302 8.644C13.022 8.356 12.646 8.212 12.174 8.212H10.434V11.428Z" fill="var(--color-text)" id="icon-1024-text"></path></svg><span>affiliation</span></a>
+<a href="StpTaskOrgUnit.html#alt" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>alt</span></a>
+<a href="StpTaskOrgUnit.html#altitude" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>altitude</span></a>
+<a href="StpTaskOrgUnit.html#branch" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>branch</span></a>
+<a href="StpTaskOrgUnit.html#confidence" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>confidence</span></a>
+<a href="StpTaskOrgUnit.html#creatorRole" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>creator<wbr/>Role</span></a>
+<a href="StpTaskOrgUnit.html#description" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>description</span></a>
+<a href="StpTaskOrgUnit.html#designator1" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>designator1</span></a>
+<a href="StpTaskOrgUnit.html#designator2" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>designator2</span></a>
+<a href="StpTaskOrgUnit.html#echelon" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>echelon</span></a>
+<a href="StpTaskOrgUnit.html#fsTYPE" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>fsTYPE</span></a>
+<a href="StpTaskOrgUnit.html#fullDescription" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>full<wbr/>Description</span></a>
+<a href="StpTaskOrgUnit.html#info" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>info</span></a>
+<a href="StpTaskOrgUnit.html#interval" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>interval</span></a>
+<a href="StpTaskOrgUnit.html#location" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>location</span></a>
+<a href="StpTaskOrgUnit.html#maxAltitude" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>max<wbr/>Altitude</span></a>
+<a href="StpTaskOrgUnit.html#minAltitude" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>min<wbr/>Altitude</span></a>
+<a href="StpTaskOrgUnit.html#modifier" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>modifier</span></a>
+<a href="StpTaskOrgUnit.html#name" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>name</span></a>
+<a href="StpTaskOrgUnit.html#parent" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>parent</span></a>
+<a href="StpTaskOrgUnit.html#parentCoa" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>parent<wbr/>Coa</span></a>
+<a href="StpTaskOrgUnit.html#parentTO" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>parentTO</span></a>
+<a href="StpTaskOrgUnit.html#poid" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>poid</span></a>
+<a href="StpTaskOrgUnit.html#shortDescription" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>short<wbr/>Description</span></a>
+<a href="StpTaskOrgUnit.html#sidc" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>sidc</span></a>
+<a href="StpTaskOrgUnit.html#status" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>status</span></a>
+<a href="StpTaskOrgUnit.html#strength" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>strength</span></a>
+<a href="StpTaskOrgUnit.html#timeFrom" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>time<wbr/>From</span></a>
+<a href="StpTaskOrgUnit.html#timeTo" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>time<wbr/>To</span></a>
+<a href="StpTaskOrgUnit.html#toUnitPoid" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>to<wbr/>Unit<wbr/>Poid</span></a>
+<a href="StpTaskOrgUnit.html#unitType" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>unit<wbr/>Type</span></a>
 </div></section>
 <section class="tsd-index-section">
 <h3 class="tsd-index-heading">Methods</h3>
-<div class="tsd-index-list"><a href="StpSymbol.html#asGeoJSON" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="#FF4DB8" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12" id="icon-2048-path"></rect><path d="M9.162 16V7.24H10.578L11.514 10.072C11.602 10.328 11.674 10.584 11.73 10.84C11.794 11.088 11.842 11.28 11.874 11.416C11.906 11.28 11.954 11.088 12.018 10.84C12.082 10.584 12.154 10.324 12.234 10.06L13.122 7.24H14.538V16H13.482V12.82C13.482 12.468 13.49 12.068 13.506 11.62C13.53 11.172 13.558 10.716 13.59 10.252C13.622 9.78 13.654 9.332 13.686 8.908C13.726 8.476 13.762 8.1 13.794 7.78L12.366 12.16H11.334L9.894 7.78C9.934 8.092 9.97 8.456 10.002 8.872C10.042 9.28 10.078 9.716 10.11 10.18C10.142 10.636 10.166 11.092 10.182 11.548C10.206 12.004 10.218 12.428 10.218 12.82V16H9.162Z" fill="var(--color-text)" id="icon-2048-text"></path></svg><span>as<wbr/>GeoJSON</span></a>
+<div class="tsd-index-list"><a href="StpTaskOrgUnit.html#asGeoJSON" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="#FF4DB8" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12" id="icon-2048-path"></rect><path d="M9.162 16V7.24H10.578L11.514 10.072C11.602 10.328 11.674 10.584 11.73 10.84C11.794 11.088 11.842 11.28 11.874 11.416C11.906 11.28 11.954 11.088 12.018 10.84C12.082 10.584 12.154 10.324 12.234 10.06L13.122 7.24H14.538V16H13.482V12.82C13.482 12.468 13.49 12.068 13.506 11.62C13.53 11.172 13.558 10.716 13.59 10.252C13.622 9.78 13.654 9.332 13.686 8.908C13.726 8.476 13.762 8.1 13.794 7.78L12.366 12.16H11.334L9.894 7.78C9.934 8.092 9.97 8.456 10.002 8.872C10.042 9.28 10.078 9.716 10.11 10.18C10.142 10.636 10.166 11.092 10.182 11.548C10.206 12.004 10.218 12.428 10.218 12.82V16H9.162Z" fill="var(--color-text)" id="icon-2048-text"></path></svg><span>as<wbr/>GeoJSON</span></a>
 </div></section></div></details></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Constructors</h2>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="constructor" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>constructor</span><a href="#constructor" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" id="icon-anchor-a"></path><path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" id="icon-anchor-b"></path><path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" id="icon-anchor-c"></path></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
-<li class="tsd-signature tsd-anchor-link" id="constructor.new_StpSymbol"><span class="tsd-kind-constructor-signature">new <wbr/>Stp<wbr/>Symbol</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="StpSymbol.html" class="tsd-signature-type tsd-kind-class">StpSymbol</a><a href="#constructor.new_StpSymbol" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="constructor.new_StpTaskOrgUnit"><span class="tsd-kind-constructor-signature">new <wbr/>Stp<wbr/>Task<wbr/>Org<wbr/>Unit</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="StpTaskOrgUnit.html" class="tsd-signature-type tsd-kind-class">StpTaskOrgUnit</a><a href="#constructor.new_StpTaskOrgUnit" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
 <li class="tsd-description">
-<h4 class="tsd-returns-title">Returns <a href="StpSymbol.html" class="tsd-signature-type tsd-kind-class">StpSymbol</a></h4><aside class="tsd-sources">
-<p>Inherited from <a href="StpItem.html">StpItem</a>.<a href="StpItem.html#constructor">constructor</a></p></aside></li></ul></section></section>
+<h4 class="tsd-returns-title">Returns <a href="StpTaskOrgUnit.html" class="tsd-signature-type tsd-kind-class">StpTaskOrgUnit</a></h4><aside class="tsd-sources">
+<p>Inherited from <a href="StpSymbol.html">StpSymbol</a>.<a href="StpSymbol.html#constructor">constructor</a></p></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Properties</h2>
-<section class="tsd-panel tsd-member"><a id="affiliation" class="tsd-anchor"></a>
+<section class="tsd-panel tsd-member tsd-is-inherited"><a id="affiliation" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>affiliation</span><a href="#affiliation" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">affiliation</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;pending&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;unknown&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;assumedfriend&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;friend&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;neutral&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;suspected&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;hostile&quot;</span></div>
 <div class="tsd-comment tsd-typography"><p>Symbol affiliation</p>
 </div><aside class="tsd-sources">
+<p>Inherited from <a href="StpSymbol.html">StpSymbol</a>.<a href="StpSymbol.html#affiliation">affiliation</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/hyssostech/stp-js/blob/6e0c161/src/stptypes.ts#L129">stptypes.ts:129</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="alt" class="tsd-anchor"></a>
@@ -94,21 +97,23 @@
 <div class="tsd-signature"><span class="tsd-kind-property">alt</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 <div class="tsd-comment tsd-typography"><p>Alternate index - rank of this symbol interpretation amongst the interpretation hypothesis</p>
 </div><aside class="tsd-sources">
-<p>Inherited from <a href="StpItem.html">StpItem</a>.<a href="StpItem.html#alt">alt</a></p>
+<p>Inherited from <a href="StpSymbol.html">StpSymbol</a>.<a href="StpSymbol.html#alt">alt</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/hyssostech/stp-js/blob/6e0c161/src/stptypes.ts#L98">stptypes.ts:98</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member"><a id="altitude" class="tsd-anchor"></a>
+<section class="tsd-panel tsd-member tsd-is-inherited"><a id="altitude" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>altitude</span><a href="#altitude" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">altitude</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 <div class="tsd-comment tsd-typography"><p>Symbol altitude</p>
 </div><aside class="tsd-sources">
+<p>Inherited from <a href="StpSymbol.html">StpSymbol</a>.<a href="StpSymbol.html#altitude">altitude</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/hyssostech/stp-js/blob/6e0c161/src/stptypes.ts#L232">stptypes.ts:232</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member"><a id="branch" class="tsd-anchor"></a>
+<section class="tsd-panel tsd-member tsd-is-inherited"><a id="branch" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>branch</span><a href="#branch" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">branch</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;installation&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;weapon&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;ground_unit&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;civilian_air&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;special_operations&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;vstol&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;equipment&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;military_air&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;military_sea&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;military_submarine&quot;</span></div>
 <div class="tsd-comment tsd-typography"><p>Branch: equipment, ground_unit, ...</p>
 </div><aside class="tsd-sources">
+<p>Inherited from <a href="StpSymbol.html">StpSymbol</a>.<a href="StpSymbol.html#branch">branch</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/hyssostech/stp-js/blob/6e0c161/src/stptypes.ts#L206">stptypes.ts:206</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="confidence" class="tsd-anchor"></a>
@@ -116,7 +121,7 @@
 <div class="tsd-signature"><span class="tsd-kind-property">confidence</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 <div class="tsd-comment tsd-typography"><p>Confidence score of the recognition</p>
 </div><aside class="tsd-sources">
-<p>Inherited from <a href="StpItem.html">StpItem</a>.<a href="StpItem.html#confidence">confidence</a></p>
+<p>Inherited from <a href="StpSymbol.html">StpSymbol</a>.<a href="StpSymbol.html#confidence">confidence</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/hyssostech/stp-js/blob/6e0c161/src/stptypes.ts#L94">stptypes.ts:94</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="creatorRole" class="tsd-anchor"></a>
@@ -124,93 +129,125 @@
 <div class="tsd-signature"><span class="tsd-kind-property">creator<wbr/>Role</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 <div class="tsd-comment tsd-typography"><p>Role that created the symbol: S2, S3, S4, Eng, FSO</p>
 </div><aside class="tsd-sources">
-<p>Inherited from <a href="StpItem.html">StpItem</a>.<a href="StpItem.html#creatorRole">creatorRole</a></p>
+<p>Inherited from <a href="StpSymbol.html">StpSymbol</a>.<a href="StpSymbol.html#creatorRole">creatorRole</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/hyssostech/stp-js/blob/6e0c161/src/stptypes.ts#L86">stptypes.ts:86</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member"><a id="description" class="tsd-anchor"></a>
+<section class="tsd-panel tsd-member tsd-is-inherited"><a id="description" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>description</span><a href="#description" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">description</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 <div class="tsd-comment tsd-typography"><p>Regular symbol description - name/type of the symbol plus designators, but may omit &quot;friendly&quot;, &quot;present&quot; and other assumed decorators</p>
 </div><aside class="tsd-sources">
+<p>Inherited from <a href="StpSymbol.html">StpSymbol</a>.<a href="StpSymbol.html#description">description</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/hyssostech/stp-js/blob/6e0c161/src/stptypes.ts#L120">stptypes.ts:120</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member"><a id="designator1" class="tsd-anchor"></a>
+<section class="tsd-panel tsd-member tsd-is-inherited"><a id="designator1" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>designator1</span><a href="#designator1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">designator1</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 <div class="tsd-comment tsd-typography"><p>Symbol designator</p>
 </div><aside class="tsd-sources">
+<p>Inherited from <a href="StpSymbol.html">StpSymbol</a>.<a href="StpSymbol.html#designator1">designator1</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/hyssostech/stp-js/blob/6e0c161/src/stptypes.ts#L170">stptypes.ts:170</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member"><a id="designator2" class="tsd-anchor"></a>
+<section class="tsd-panel tsd-member tsd-is-inherited"><a id="designator2" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>designator2</span><a href="#designator2" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">designator2</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 <div class="tsd-comment tsd-typography"><p>Additional designator, e.g. in a company boundary, indicating the designator of the company to the S or E</p>
 </div><aside class="tsd-sources">
+<p>Inherited from <a href="StpSymbol.html">StpSymbol</a>.<a href="StpSymbol.html#designator2">designator2</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/hyssostech/stp-js/blob/6e0c161/src/stptypes.ts#L174">stptypes.ts:174</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member"><a id="echelon" class="tsd-anchor"></a>
+<section class="tsd-panel tsd-member tsd-is-inherited"><a id="echelon" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>echelon</span><a href="#echelon" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">echelon</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;none&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;team&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;squad&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;section&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;platoon&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;company&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;battalion&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;regiment&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;brigade&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;division&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;corps&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;army&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;armygroup&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;region&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;command&quot;</span></div>
 <div class="tsd-comment tsd-typography"><p>Symbol echelon if applicable</p>
 </div><aside class="tsd-sources">
+<p>Inherited from <a href="StpSymbol.html">StpSymbol</a>.<a href="StpSymbol.html#echelon">echelon</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/hyssostech/stp-js/blob/6e0c161/src/stptypes.ts#L143">stptypes.ts:143</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member tsd-is-inherited"><a id="fsTYPE" class="tsd-anchor"></a>
+<section class="tsd-panel tsd-member"><a id="fsTYPE" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>fsTYPE</span><a href="#fsTYPE" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">fsTYPE</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
-<div class="tsd-comment tsd-typography"><p>Type of item: unit | mootw | equipment | tg | task |</p>
+<div class="tsd-signature"><span class="tsd-kind-property">fsTYPE</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;task_org_unit&quot;</span></div>
+<div class="tsd-comment tsd-typography"><p>Item type</p>
 </div><aside class="tsd-sources">
-<p>Inherited from <a href="StpItem.html">StpItem</a>.<a href="StpItem.html#fsTYPE">fsTYPE</a></p>
+<p>Overrides <a href="StpSymbol.html">StpSymbol</a>.<a href="StpSymbol.html#fsTYPE">fsTYPE</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/hyssostech/stp-js/blob/6e0c161/src/stptypes.ts#L74">stptypes.ts:74</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member"><a id="fullDescription" class="tsd-anchor"></a>
+<li>Defined in <a href="https://github.com/hyssostech/stp-js/blob/6e0c161/src/stptypes.ts#L339">stptypes.ts:339</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member tsd-is-inherited"><a id="fullDescription" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>full<wbr/>Description</span><a href="#fullDescription" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">full<wbr/>Description</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 <div class="tsd-comment tsd-typography"><p>Full description of the symbol</p>
 </div><aside class="tsd-sources">
+<p>Inherited from <a href="StpSymbol.html">StpSymbol</a>.<a href="StpSymbol.html#fullDescription">fullDescription</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/hyssostech/stp-js/blob/6e0c161/src/stptypes.ts#L124">stptypes.ts:124</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member"><a id="info" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>info</span><a href="#info" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">info</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+<div class="tsd-comment tsd-typography"><p>Additional information</p>
+</div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/hyssostech/stp-js/blob/6e0c161/src/stptypes.ts#L359">stptypes.ts:359</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="interval" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>interval</span><a href="#interval" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">interval</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="Interval.html" class="tsd-signature-type tsd-kind-class">Interval</a></div>
 <div class="tsd-comment tsd-typography"><p>Symbol time interval, if any</p>
 </div><aside class="tsd-sources">
-<p>Inherited from <a href="StpItem.html">StpItem</a>.<a href="StpItem.html#interval">interval</a></p>
+<p>Inherited from <a href="StpSymbol.html">StpSymbol</a>.<a href="StpSymbol.html#interval">interval</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/hyssostech/stp-js/blob/6e0c161/src/stptypes.ts#L90">stptypes.ts:90</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member"><a id="location" class="tsd-anchor"></a>
+<section class="tsd-panel tsd-member tsd-is-inherited"><a id="location" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>location</span><a href="#location" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">location</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="Location.html" class="tsd-signature-type tsd-kind-class">Location</a></div>
 <div class="tsd-comment tsd-typography"><p>Location of the symbol</p>
 </div><aside class="tsd-sources">
+<p>Inherited from <a href="StpSymbol.html">StpSymbol</a>.<a href="StpSymbol.html#location">location</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/hyssostech/stp-js/blob/6e0c161/src/stptypes.ts#L111">stptypes.ts:111</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member"><a id="maxAltitude" class="tsd-anchor"></a>
+<section class="tsd-panel tsd-member tsd-is-inherited"><a id="maxAltitude" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>max<wbr/>Altitude</span><a href="#maxAltitude" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">max<wbr/>Altitude</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 <div class="tsd-comment tsd-typography"><p>Symbol maximal altitude if a range is supported</p>
 </div><aside class="tsd-sources">
+<p>Inherited from <a href="StpSymbol.html">StpSymbol</a>.<a href="StpSymbol.html#maxAltitude">maxAltitude</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/hyssostech/stp-js/blob/6e0c161/src/stptypes.ts#L240">stptypes.ts:240</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member"><a id="minAltitude" class="tsd-anchor"></a>
+<section class="tsd-panel tsd-member tsd-is-inherited"><a id="minAltitude" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>min<wbr/>Altitude</span><a href="#minAltitude" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">min<wbr/>Altitude</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 <div class="tsd-comment tsd-typography"><p>Symbol minimal altitude if a range is supported</p>
 </div><aside class="tsd-sources">
+<p>Inherited from <a href="StpSymbol.html">StpSymbol</a>.<a href="StpSymbol.html#minAltitude">minAltitude</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/hyssostech/stp-js/blob/6e0c161/src/stptypes.ts#L236">stptypes.ts:236</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member"><a id="modifier" class="tsd-anchor"></a>
+<section class="tsd-panel tsd-member tsd-is-inherited"><a id="modifier" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>modifier</span><a href="#modifier" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">modifier</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;none&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;dummy&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;hq&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;dummy_hq&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;task_force &quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;dummy_task_force&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;task_force_hq&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;dummytask_force_hq&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;installation&quot;</span></div>
 <div class="tsd-comment tsd-typography"><p>HQ and Task Force modifier</p>
 </div><aside class="tsd-sources">
+<p>Inherited from <a href="StpSymbol.html">StpSymbol</a>.<a href="StpSymbol.html#modifier">modifier</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/hyssostech/stp-js/blob/6e0c161/src/stptypes.ts#L183">stptypes.ts:183</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member"><a id="parent" class="tsd-anchor"></a>
+<section class="tsd-panel tsd-member"><a id="name" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>name</span><a href="#name" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">name</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+<div class="tsd-comment tsd-typography"><p>Unit name - can be different that the designators, for example &quot;Triple Nickel&quot; for 5/5-5
+Name can be an expression with grouping (parenthesis) alternatives (pipe symbol) and optional (square brackets).
+Example: (ONE | FIRST) [ROYAL] IRISH [GUARDS] [REGIMENT]	
+Accepts these names, amongst others:
+  ONE IRISH
+  FIRST IRISH
+  ONE ROYAL IRISH
+  FIRST ROYAL IRISH REGIMENT
+  ONE ROYAL ISISH GUARDS REGIMENT</p>
+</div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/hyssostech/stp-js/blob/6e0c161/src/stptypes.ts#L351">stptypes.ts:351</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member tsd-is-inherited"><a id="parent" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>parent</span><a href="#parent" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">parent</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 <div class="tsd-comment tsd-typography"><p>Parent unit designator</p>
 </div><aside class="tsd-sources">
+<p>Inherited from <a href="StpSymbol.html">StpSymbol</a>.<a href="StpSymbol.html#parent">parent</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/hyssostech/stp-js/blob/6e0c161/src/stptypes.ts#L166">stptypes.ts:166</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="parentCoa" class="tsd-anchor"></a>
@@ -218,76 +255,98 @@
 <div class="tsd-signature"><span class="tsd-kind-property">parent<wbr/>Coa</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 <div class="tsd-comment tsd-typography"><p>Unique id of the COA this symbol belongs to</p>
 </div><aside class="tsd-sources">
-<p>Inherited from <a href="StpItem.html">StpItem</a>.<a href="StpItem.html#parentCoa">parentCoa</a></p>
+<p>Inherited from <a href="StpSymbol.html">StpSymbol</a>.<a href="StpSymbol.html#parentCoa">parentCoa</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/hyssostech/stp-js/blob/6e0c161/src/stptypes.ts#L82">stptypes.ts:82</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member"><a id="parentTO" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>parentTO</span><a href="#parentTO" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">parentTO</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+<div class="tsd-comment tsd-typography"><p>Unique Id of the StpTaskOrg this element belongs to</p>
+</div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/hyssostech/stp-js/blob/6e0c161/src/stptypes.ts#L363">stptypes.ts:363</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="poid" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>poid</span><a href="#poid" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">poid</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 <div class="tsd-comment tsd-typography"><p>STP unique identifier</p>
 </div><aside class="tsd-sources">
-<p>Inherited from <a href="StpItem.html">StpItem</a>.<a href="StpItem.html#poid">poid</a></p>
+<p>Inherited from <a href="StpSymbol.html">StpSymbol</a>.<a href="StpSymbol.html#poid">poid</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/hyssostech/stp-js/blob/6e0c161/src/stptypes.ts#L78">stptypes.ts:78</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member"><a id="shortDescription" class="tsd-anchor"></a>
+<section class="tsd-panel tsd-member tsd-is-inherited"><a id="shortDescription" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>short<wbr/>Description</span><a href="#shortDescription" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">short<wbr/>Description</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 <div class="tsd-comment tsd-typography"><p>Short symbol description - just the essential distinguishing elements, e.g. designators</p>
 </div><aside class="tsd-sources">
+<p>Inherited from <a href="StpSymbol.html">StpSymbol</a>.<a href="StpSymbol.html#shortDescription">shortDescription</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/hyssostech/stp-js/blob/6e0c161/src/stptypes.ts#L116">stptypes.ts:116</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member"><a id="sidc" class="tsd-anchor"></a>
+<section class="tsd-panel tsd-member tsd-is-inherited"><a id="sidc" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>sidc</span><a href="#sidc" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">sidc</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="Sidc.html" class="tsd-signature-type tsd-kind-class">Sidc</a></div>
 <div class="tsd-comment tsd-typography"><p>2525D and C military ids of this symbol</p>
 </div><aside class="tsd-sources">
+<p>Inherited from <a href="StpSymbol.html">StpSymbol</a>.<a href="StpSymbol.html#sidc">sidc</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/hyssostech/stp-js/blob/6e0c161/src/stptypes.ts#L107">stptypes.ts:107</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member"><a id="status" class="tsd-anchor"></a>
+<section class="tsd-panel tsd-member tsd-is-inherited"><a id="status" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>status</span><a href="#status" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">status</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;present&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;anticipated&quot;</span></div>
 <div class="tsd-comment tsd-typography"><p>Symbol status</p>
 </div><aside class="tsd-sources">
+<p>Inherited from <a href="StpSymbol.html">StpSymbol</a>.<a href="StpSymbol.html#status">status</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/hyssostech/stp-js/blob/6e0c161/src/stptypes.ts#L179">stptypes.ts:179</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member"><a id="strength" class="tsd-anchor"></a>
+<section class="tsd-panel tsd-member tsd-is-inherited"><a id="strength" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>strength</span><a href="#strength" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">strength</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;none&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;reduced&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;reinforced&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;reduced_reinforced&quot;</span></div>
 <div class="tsd-comment tsd-typography"><p>Strength modifier</p>
 </div><aside class="tsd-sources">
+<p>Inherited from <a href="StpSymbol.html">StpSymbol</a>.<a href="StpSymbol.html#strength">strength</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/hyssostech/stp-js/blob/6e0c161/src/stptypes.ts#L199">stptypes.ts:199</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member"><a id="timeFrom" class="tsd-anchor"></a>
+<section class="tsd-panel tsd-member tsd-is-inherited"><a id="timeFrom" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>time<wbr/>From</span><a href="#timeFrom" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">time<wbr/>From</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type ">Date</span></div>
 <div class="tsd-comment tsd-typography"><p>Start time, e.g. of a Restricted Operations Zone</p>
 </div><aside class="tsd-sources">
+<p>Inherited from <a href="StpSymbol.html">StpSymbol</a>.<a href="StpSymbol.html#timeFrom">timeFrom</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/hyssostech/stp-js/blob/6e0c161/src/stptypes.ts#L223">stptypes.ts:223</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member"><a id="timeTo" class="tsd-anchor"></a>
+<section class="tsd-panel tsd-member tsd-is-inherited"><a id="timeTo" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>time<wbr/>To</span><a href="#timeTo" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">time<wbr/>To</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type ">Date</span></div>
 <div class="tsd-comment tsd-typography"><p>End time, e.g. of a Restricted Operations Zone</p>
 </div><aside class="tsd-sources">
+<p>Inherited from <a href="StpSymbol.html">StpSymbol</a>.<a href="StpSymbol.html#timeTo">timeTo</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/hyssostech/stp-js/blob/6e0c161/src/stptypes.ts#L227">stptypes.ts:227</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member"><a id="toUnitPoid" class="tsd-anchor"></a>
+<section class="tsd-panel tsd-member tsd-is-inherited"><a id="toUnitPoid" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>to<wbr/>Unit<wbr/>Poid</span><a href="#toUnitPoid" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">to<wbr/>Unit<wbr/>Poid</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 <div class="tsd-comment tsd-typography"><p>For symbols created from a TO, unique id of the Task Org Unit that this symbol was created from</p>
 </div><aside class="tsd-sources">
+<p>Inherited from <a href="StpSymbol.html">StpSymbol</a>.<a href="StpSymbol.html#toUnitPoid">toUnitPoid</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/hyssostech/stp-js/blob/6e0c161/src/stptypes.ts#L244">stptypes.ts:244</a></li></ul></aside></section></section>
+<li>Defined in <a href="https://github.com/hyssostech/stp-js/blob/6e0c161/src/stptypes.ts#L244">stptypes.ts:244</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member"><a id="unitType" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>unit<wbr/>Type</span><a href="#unitType" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">unit<wbr/>Type</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+<div class="tsd-comment tsd-typography"><p>Function description, such as &#39;MECHANIZED INFANTRY&#39;</p>
+</div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/hyssostech/stp-js/blob/6e0c161/src/stptypes.ts#L355">stptypes.ts:355</a></li></ul></aside></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Methods</h2>
-<section class="tsd-panel tsd-member"><a id="asGeoJSON" class="tsd-anchor"></a>
+<section class="tsd-panel tsd-member tsd-is-inherited"><a id="asGeoJSON" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>as<wbr/>GeoJSON</span><a href="#asGeoJSON" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<ul class="tsd-signatures">
+<ul class="tsd-signatures tsd-is-inherited">
 <li class="tsd-signature tsd-anchor-link" id="asGeoJSON.asGeoJSON-1"><span class="tsd-kind-call-signature">as<wbr/>GeoJSON</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Feature</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type ">GeoJsonProperties</span><span class="tsd-signature-symbol">&gt;</span><a href="#asGeoJSON.asGeoJSON-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Symbol&#39;s GeoJSON representation</p>
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Feature</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type ">GeoJsonProperties</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
+<p>Inherited from <a href="StpSymbol.html">StpSymbol</a>.<a href="StpSymbol.html#asGeoJSON">asGeoJSON</a></p>
 <ul>
 <li>Defined in <a href="https://github.com/hyssostech/stp-js/blob/6e0c161/src/stptypes.ts#L248">stptypes.ts:248</a></li></ul></aside></li></ul></section></section></div>
 <div class="col-sidebar">
@@ -309,34 +368,38 @@
 <div class="tsd-accordion-details">
 <ul>
 <li><a href="#constructor" class="tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-512-path"></use><use href="#icon-512-text"></use></svg><span>constructor</span></a></li>
-<li><a href="#affiliation" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>affiliation</span></a></li>
+<li><a href="#affiliation" class="tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>affiliation</span></a></li>
 <li><a href="#alt" class="tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>alt</span></a></li>
-<li><a href="#altitude" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>altitude</span></a></li>
-<li><a href="#branch" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>branch</span></a></li>
+<li><a href="#altitude" class="tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>altitude</span></a></li>
+<li><a href="#branch" class="tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>branch</span></a></li>
 <li><a href="#confidence" class="tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>confidence</span></a></li>
 <li><a href="#creatorRole" class="tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>creator<wbr/>Role</span></a></li>
-<li><a href="#description" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>description</span></a></li>
-<li><a href="#designator1" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>designator1</span></a></li>
-<li><a href="#designator2" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>designator2</span></a></li>
-<li><a href="#echelon" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>echelon</span></a></li>
-<li><a href="#fsTYPE" class="tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>fsTYPE</span></a></li>
-<li><a href="#fullDescription" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>full<wbr/>Description</span></a></li>
+<li><a href="#description" class="tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>description</span></a></li>
+<li><a href="#designator1" class="tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>designator1</span></a></li>
+<li><a href="#designator2" class="tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>designator2</span></a></li>
+<li><a href="#echelon" class="tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>echelon</span></a></li>
+<li><a href="#fsTYPE" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>fsTYPE</span></a></li>
+<li><a href="#fullDescription" class="tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>full<wbr/>Description</span></a></li>
+<li><a href="#info" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>info</span></a></li>
 <li><a href="#interval" class="tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>interval</span></a></li>
-<li><a href="#location" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>location</span></a></li>
-<li><a href="#maxAltitude" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>max<wbr/>Altitude</span></a></li>
-<li><a href="#minAltitude" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>min<wbr/>Altitude</span></a></li>
-<li><a href="#modifier" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>modifier</span></a></li>
-<li><a href="#parent" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>parent</span></a></li>
+<li><a href="#location" class="tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>location</span></a></li>
+<li><a href="#maxAltitude" class="tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>max<wbr/>Altitude</span></a></li>
+<li><a href="#minAltitude" class="tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>min<wbr/>Altitude</span></a></li>
+<li><a href="#modifier" class="tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>modifier</span></a></li>
+<li><a href="#name" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>name</span></a></li>
+<li><a href="#parent" class="tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>parent</span></a></li>
 <li><a href="#parentCoa" class="tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>parent<wbr/>Coa</span></a></li>
+<li><a href="#parentTO" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>parentTO</span></a></li>
 <li><a href="#poid" class="tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>poid</span></a></li>
-<li><a href="#shortDescription" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>short<wbr/>Description</span></a></li>
-<li><a href="#sidc" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>sidc</span></a></li>
-<li><a href="#status" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>status</span></a></li>
-<li><a href="#strength" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>strength</span></a></li>
-<li><a href="#timeFrom" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>time<wbr/>From</span></a></li>
-<li><a href="#timeTo" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>time<wbr/>To</span></a></li>
-<li><a href="#toUnitPoid" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>to<wbr/>Unit<wbr/>Poid</span></a></li>
-<li><a href="#asGeoJSON" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>as<wbr/>GeoJSON</span></a></li></ul></div></details></div>
+<li><a href="#shortDescription" class="tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>short<wbr/>Description</span></a></li>
+<li><a href="#sidc" class="tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>sidc</span></a></li>
+<li><a href="#status" class="tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>status</span></a></li>
+<li><a href="#strength" class="tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>strength</span></a></li>
+<li><a href="#timeFrom" class="tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>time<wbr/>From</span></a></li>
+<li><a href="#timeTo" class="tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>time<wbr/>To</span></a></li>
+<li><a href="#toUnitPoid" class="tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>to<wbr/>Unit<wbr/>Poid</span></a></li>
+<li><a href="#unitType" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>unit<wbr/>Type</span></a></li>
+<li><a href="#asGeoJSON" class="tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>as<wbr/>GeoJSON</span></a></li></ul></div></details></div>
 <div class="site-menu">
 <nav class="tsd-navigation"><a href="../modules.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-namespace)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6" id="icon-4-path"></rect><path d="M9.33 16V7.24H10.77L13.446 14.74C13.43 14.54 13.41 14.296 13.386 14.008C13.37 13.712 13.354 13.404 13.338 13.084C13.33 12.756 13.326 12.448 13.326 12.16V7.24H14.37V16H12.93L10.266 8.5C10.282 8.692 10.298 8.936 10.314 9.232C10.33 9.52 10.342 9.828 10.35 10.156C10.366 10.476 10.374 10.784 10.374 11.08V16H9.33Z" fill="var(--color-text)" id="icon-4-text"></path></svg><span>Sketch-<wbr/>thru-<wbr/>Plan SDK -<wbr/> v0.6.1-<wbr/>alpha.0</span></a>
 <ul class="tsd-small-nested-navigation">
@@ -355,11 +418,11 @@
 <li><a href="StpCoa.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg><span>Stp<wbr/>Coa</span></a></li>
 <li><a href="StpItem.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg><span>Stp<wbr/>Item</span></a></li>
 <li><a href="StpRecognizer.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg><span>Stp<wbr/>Recognizer</span></a></li>
-<li><a href="StpSymbol.html" class="current"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg><span>Stp<wbr/>Symbol</span></a></li>
+<li><a href="StpSymbol.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg><span>Stp<wbr/>Symbol</span></a></li>
 <li><a href="StpTask.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg><span>Stp<wbr/>Task</span></a></li>
 <li><a href="StpTaskOrg.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg><span>Stp<wbr/>Task<wbr/>Org</span></a></li>
 <li><a href="StpTaskOrgRelationship.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg><span>Stp<wbr/>Task<wbr/>Org<wbr/>Relationship</span></a></li>
-<li><a href="StpTaskOrgUnit.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg><span>Stp<wbr/>Task<wbr/>Org<wbr/>Unit</span></a></li>
+<li><a href="StpTaskOrgUnit.html" class="current"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg><span>Stp<wbr/>Task<wbr/>Org<wbr/>Unit</span></a></li>
 <li><a href="StpWebSocketsConnector.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg><span>Stp<wbr/>Web<wbr/>Sockets<wbr/>Connector</span></a></li>
 <li><a href="TaskOrgState.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg><span>Task<wbr/>Org<wbr/>State</span></a></li>
 <li><a href="../interfaces/ISpeechRecoItem.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-interface)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6" id="icon-256-path"></rect><path d="M9.51 16V15.016H11.298V8.224H9.51V7.24H14.19V8.224H12.402V15.016H14.19V16H9.51Z" fill="var(--color-text)" id="icon-256-text"></path></svg><span>ISpeech<wbr/>Reco<wbr/>Item</span></a></li>

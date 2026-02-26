@@ -37,8 +37,8 @@ const config: Config = {
     [
       'docusaurus-plugin-typedoc',
       {
-        entryPoints: ['./_sdk-src/src/index.ts'],
-        tsconfig: './_sdk-src/tsconfig.json',
+        entryPoints: ['../stp-js/src/index.ts'],
+        tsconfig: '../stp-js/tsconfig.json',
         outputFileStrategy: 'members',
         indexFormat: 'table',
         parametersFormat: 'table',

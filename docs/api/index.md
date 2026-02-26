@@ -1,4 +1,4 @@
-# Sketch-thru-Plan SDK v0.0.0
+# Sketch-thru-Plan SDK v0.6.12
 
 ## Enumerations
 

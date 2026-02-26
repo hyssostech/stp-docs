@@ -22,13 +22,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # Checkout stp-js source alongside for TypeDoc API reference generation
+      # Checkout stp-js source inside workspace for TypeDoc API reference generation
       - name: Checkout stp-js SDK source
         uses: actions/checkout@v4
         with:
           repository: hyssostech/stp-js
           token: ${{ secrets.STP_JS_PAT }}
-          path: ../stp-js
+          path: .stp-js
 
       - uses: actions/setup-node@v4
         with:
@@ -39,6 +39,8 @@ jobs:
         run: npm ci
 
       - name: Build website
+        env:
+          STP_JS_PATH: ./.stp-js
         run: npm run build
 
       - name: Upload artifact

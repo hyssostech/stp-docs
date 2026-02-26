@@ -1,0 +1,50 @@
+import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
+
+const sidebars: SidebarsConfig = {
+  docsSidebar: [
+    'intro',
+    'installation',
+    'getting-started',
+    {
+      type: 'category',
+      label: 'Guides',
+      collapsed: false,
+      link: { type: 'generated-index', description: 'In-depth guides for STP SDK features.' },
+      items: [
+        'guides/symbols-and-rendering',
+        'guides/tasks',
+        'guides/task-org',
+        'guides/roles',
+        'guides/scenarios',
+        'guides/sessions',
+        'guides/custom-commands',
+        'guides/c2sim',
+        'guides/iframe-embedding',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Plugins',
+      collapsed: false,
+      link: { type: 'generated-index', description: 'Plugin interfaces for connectors, speech, maps, and renderers.' },
+      items: [
+        'plugins/connectors',
+        'plugins/speech',
+        'plugins/map-adapters',
+        'plugins/renderers',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Reference',
+      link: { type: 'generated-index', description: 'API reference, symbol properties, and changelog.' },
+      items: [
+        'reference/json-api',
+        'reference/symbol-properties',
+        'reference/changelog',
+      ],
+    },
+  ],
+};
+
+export default sidebars;

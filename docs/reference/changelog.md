@@ -6,7 +6,12 @@ sidebar_position: 3
 
 # Changelog
 
-Release history for the `@anthropic/stp-js` SDK package.
+Release history for the `sketch-thru-plan-sdk` package.
+
+## 0.6.13-alpha.0
+
+- Added `sendSimulatedSpeechRecognition()` method to send typed text as simulated speech recognition
+- Added `extensions` property to `StpItem`, `StpTaskOrg`, and `StpTaskOrgRelationship` for roundtripping custom client data through STP
 
 ## 0.6.12
 

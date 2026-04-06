@@ -43,6 +43,18 @@ Role that created the symbol: S2, S3, S4, Eng, FSO
 
 ***
 
+### extensions?
+
+> `optional` **extensions**: `Record`\<`string`, `unknown`\>
+
+Open-ended client-defined extension properties.
+Extensions are roundtripped through STP: set on addSymbol/addTask/etc.,
+persisted in the STP feature structure layer, and returned on events like
+onSymbolAdded/onSymbolModified/etc.
+Values can be primitives, arrays, or nested objects.
+
+***
+
 ### fsTYPE
 
 > **fsTYPE**: `string` \| `undefined`

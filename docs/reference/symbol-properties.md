@@ -82,6 +82,14 @@ When STP is uncertain, it returns a ranked list of candidate interpretations. Ea
 
 Use `chooseAlternate(symbol)` on the `StpRecognizer` to confirm a specific interpretation when the top result (`alt === 0`) is not the intended one.
 
+## Extensions
+
+The `extensions` property on `StpItem` (and by inheritance on `StpSymbol`, `StpTask`, `StpTaskOrg`, and `StpTaskOrgRelationship`) lets client applications attach arbitrary custom data to items. The data roundtrips through STP — whatever is set on `extensions` before sending is returned unchanged on the corresponding events.
+
+| Property | Type | Description |
+|---|---|---|
+| `extensions` | `Record<string, any> \| undefined` | Optional bag of custom key/value pairs that roundtrip through STP |
+
 ## Task-Specific Properties
 
 Recognised tasks have additional properties beyond the core symbol fields. See the [Tasks guide](../guides/tasks.md) for details on `StpTask` and its enumerations.

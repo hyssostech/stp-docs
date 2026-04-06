@@ -91,3 +91,23 @@ Part C of the 2525D id
 ##### Returns
 
 `string` \| `undefined`
+
+## Methods
+
+### fromPlain()
+
+> `static` **fromPlain**(`obj`): `Sidc`
+
+Hydrate from a plain object, reconstructing delta from parts if needed.
+Object.assign cannot set getter-only properties (partA/B/C), so we
+must rebuild delta from the raw values the engine sends.
+
+#### Parameters
+
+| Parameter | Type |
+| ------ | ------ |
+| `obj` | `any` |
+
+#### Returns
+
+`Sidc`

@@ -22,6 +22,15 @@ Affiliation - friend or hostile
 
 ***
 
+### extensions?
+
+> `optional` **extensions**: `Record`\<`string`, `unknown`\>
+
+Open-ended client-defined extension properties.
+Roundtripped through STP feature structures.
+
+***
+
 ### fsTYPE
 
 > **fsTYPE**: `"task_org"` \| `undefined`

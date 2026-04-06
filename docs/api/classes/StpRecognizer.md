@@ -830,6 +830,27 @@ Get a COA content as a multiline string ready to be persisted
 
 ***
 
+### getCoaObjectSet()
+
+> **getCoaObjectSet**(`poid`, `timeout?`): `Promise`\<[`StpItem`](StpItem.md)[]\>
+
+Get COA content as an array of typed objects
+
+#### Parameters
+
+| Parameter | Type | Description |
+| ------ | ------ | ------ |
+| `poid` | `string` | COA's unique id |
+| `timeout?` | `number` | Optional timeout in seconds |
+
+#### Returns
+
+`Promise`\<[`StpItem`](StpItem.md)[]\>
+
+Array of COA objects
+
+***
+
 ### getScenarioContent()
 
 > **getScenarioContent**(`timeout?`): `Promise`\<`string`\>
@@ -847,6 +868,26 @@ Get the current scenario content as a multiline string ready to be persisted
 `Promise`\<`string`\>
 
 Scenario content, formatted as object_set([[element1], [element2], ...])
+
+***
+
+### getScenarioObjectSet()
+
+> **getScenarioObjectSet**(`timeout?`): `Promise`\<[`StpItem`](StpItem.md)[]\>
+
+Get the current scenario content as an array of typed objects
+
+#### Parameters
+
+| Parameter | Type | Description |
+| ------ | ------ | ------ |
+| `timeout?` | `number` | Optional timeout in seconds |
+
+#### Returns
+
+`Promise`\<[`StpItem`](StpItem.md)[]\>
+
+Array of STP objects in the current scenario
 
 ***
 
@@ -868,6 +909,27 @@ Get TO content as a multiline string ready to be persisted
 `Promise`\<`string`\>
 
 - TO content, formatted as object_set([[element1], [element2], ...])
+
+***
+
+### getTaskOrgObjectSet()
+
+> **getTaskOrgObjectSet**(`poid`, `timeout?`): `Promise`\<[`StpItem`](StpItem.md)[]\>
+
+Get Task Org content as an array of typed objects
+
+#### Parameters
+
+| Parameter | Type | Description |
+| ------ | ------ | ------ |
+| `poid` | `string` | TO's unique id |
+| `timeout?` | `number` | Optional timeout in seconds |
+
+#### Returns
+
+`Promise`\<[`StpItem`](StpItem.md)[]\>
+
+Array of task org objects
 
 ***
 
@@ -914,6 +976,27 @@ New COA's unique id
 
 ***
 
+### importCoaFromObjectSet()
+
+> **importCoaFromObjectSet**(`objects`, `timeout?`): `Promise`\<`string`\>
+
+Import a COA from typed objects
+
+#### Parameters
+
+| Parameter | Type | Description |
+| ------ | ------ | ------ |
+| `objects` | [`StpItem`](StpItem.md)[] | Array of COA objects (StpCoa + symbols) |
+| `timeout?` | `number` | Optional timeout in seconds |
+
+#### Returns
+
+`Promise`\<`string`\>
+
+New COA's unique id
+
+***
+
 ### importPlanData()
 
 > **importPlanData**(`content`, `timeout?`): `Promise`\<`void`\>
@@ -925,6 +1008,25 @@ Load additional data into an existing scenario
 | Parameter | Type | Description |
 | ------ | ------ | ------ |
 | `content` | `string` | Content to load, formatted as object_set([[element1], [element2], ...]) |
+| `timeout?` | `number` | Optional timeout in seconds |
+
+#### Returns
+
+`Promise`\<`void`\>
+
+***
+
+### importPlanDataFromObjectSet()
+
+> **importPlanDataFromObjectSet**(`objects`, `timeout?`): `Promise`\<`void`\>
+
+Import typed objects into the current scenario (merge, no clear)
+
+#### Parameters
+
+| Parameter | Type | Description |
+| ------ | ------ | ------ |
+| `objects` | [`StpItem`](StpItem.md)[] | Array of STP objects to merge into the active scenario |
 | `timeout?` | `number` | Optional timeout in seconds |
 
 #### Returns
@@ -946,6 +1048,27 @@ The individual task org units retain their original unique Ids
 | Parameter | Type | Description |
 | ------ | ------ | ------ |
 | `content` | `string` | Content to load, formatted as object_set([[element1], [element2], ...]) |
+| `timeout?` | `number` | Optional timeout in seconds |
+
+#### Returns
+
+`Promise`\<`string`\>
+
+TO's unique id
+
+***
+
+### importTaskOrgFromObjectSet()
+
+> **importTaskOrgFromObjectSet**(`objects`, `timeout?`): `Promise`\<`string`\>
+
+Import a Task Org from typed objects
+
+#### Parameters
+
+| Parameter | Type | Description |
+| ------ | ------ | ------ |
+| `objects` | [`StpItem`](StpItem.md)[] | Array of task org objects (StpTaskOrg, StpTaskOrgUnit, StpTaskOrgRelationship) |
 | `timeout?` | `number` | Optional timeout in seconds |
 
 #### Returns
@@ -1004,6 +1127,25 @@ Load a new scenario, replacing any previous content that might have been loaded 
 | Parameter | Type | Description |
 | ------ | ------ | ------ |
 | `content` | `string` | Content to load, formatted as object_set([[element1], [element2], ...]) |
+| `timeout?` | `number` | Optional timeout in seconds |
+
+#### Returns
+
+`Promise`\<`void`\>
+
+***
+
+### loadNewScenarioFromObjectSet()
+
+> **loadNewScenarioFromObjectSet**(`objects`, `timeout?`): `Promise`\<`void`\>
+
+Load a new scenario from typed objects, replacing any previous content
+
+#### Parameters
+
+| Parameter | Type | Description |
+| ------ | ------ | ------ |
+| `objects` | [`StpItem`](StpItem.md)[] | Array of STP objects to load as the new scenario |
 | `timeout?` | `number` | Optional timeout in seconds |
 
 #### Returns
@@ -1106,6 +1248,27 @@ Advertise that the user has started a sketched gesture
 | ------ | ------ | ------ |
 | `location` | [`LatLon`](LatLon.md) | Map coordinate of the first point |
 | `timestamp` | `string` | Time the first point was placed - ISO 8601 |
+
+#### Returns
+
+`void`
+
+***
+
+### sendSimulatedSpeechRecognition()
+
+> **sendSimulatedSpeechRecognition**(`text`, `startTime?`): `void`
+
+Send a text string to STP that will be treated as if it came from speech recognition.
+Numbers and letters are converted server-side to equivalent words as they would appear
+if transcribed by a speech recognizer (e.g. "A 3 1" becomes "alpha three one").
+
+#### Parameters
+
+| Parameter | Type | Description |
+| ------ | ------ | ------ |
+| `text` | `string` | Text to be converted and sent as speech |
+| `startTime?` | `Date` | Optional time the speech occurred - ISO 8601. Defaults to current time if not provided. |
 
 #### Returns
 
@@ -1224,6 +1387,25 @@ Load a scenario, updating a session content with detected differences
 | Parameter | Type | Description |
 | ------ | ------ | ------ |
 | `content` | `string` | Content to load, formatted as object_set([[element1], [element2], ...]) |
+| `timeout?` | `number` | Optional timeout in seconds |
+
+#### Returns
+
+`Promise`\<`void`\>
+
+***
+
+### syncScenarioSessionFromObjectSet()
+
+> **syncScenarioSessionFromObjectSet**(`objects`, `timeout?`): `Promise`\<`void`\>
+
+Sync a session using typed objects, updating with detected differences
+
+#### Parameters
+
+| Parameter | Type | Description |
+| ------ | ------ | ------ |
+| `objects` | [`StpItem`](StpItem.md)[] | Array of local STP objects to sync against the server state |
 | `timeout?` | `number` | Optional timeout in seconds |
 
 #### Returns

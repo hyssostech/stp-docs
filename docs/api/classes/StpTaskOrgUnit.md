@@ -154,6 +154,22 @@ Symbol echelon if applicable
 
 ***
 
+### extensions?
+
+> `optional` **extensions**: `Record`\<`string`, `unknown`\>
+
+Open-ended client-defined extension properties.
+Extensions are roundtripped through STP: set on addSymbol/addTask/etc.,
+persisted in the STP feature structure layer, and returned on events like
+onSymbolAdded/onSymbolModified/etc.
+Values can be primitives, arrays, or nested objects.
+
+#### Inherited from
+
+[`StpSymbol`](StpSymbol.md).[`extensions`](StpSymbol.md#extensions)
+
+***
+
 ### federate
 
 > **federate**: `string` \| `undefined`

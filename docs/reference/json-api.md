@@ -127,6 +127,16 @@ STP components are both consumers and producers of events. Incoming messages fol
 
 In the SDK, incoming messages correspond to event handlers prefixed with `on` (e.g., `onSymbolAdded`).
 
+## Simulated Speech
+
+For testing or accessibility workflows where a microphone is not available, the SDK provides a `sendSimulatedSpeechRecognition()` method that accepts typed text and submits it to STP as if it were a speech recognition result:
+
+```javascript
+stpsdk.sendSimulatedSpeechRecognition("infantry platoon");
+```
+
+The text is sent as a single hypothesis with confidence `1.0`. Timing is derived from the most recent sketch stroke.
+
 ## OpenRPC Schema
 
 A formal [OpenRPC](https://github.com/open-rpc) definition of the API is available:

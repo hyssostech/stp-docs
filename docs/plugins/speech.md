@@ -47,6 +47,7 @@ Capture ~2 seconds of audio before stroke start to avoid losing speech that begi
 |--------|---------|---------|
 | Azure Speech | Microsoft Cognitive Services Speech-to-Text | [`azurespeech-plugin`](https://github.com/hyssostech/sketch-thru-plan-sdk-js/tree/main/plugins/speech/azurespeech-plugin) |
 | AWS Speech | Amazon Transcribe | [`awsspeech-plugin`](https://github.com/hyssostech/sketch-thru-plan-sdk-js/tree/main/plugins/speech/awsspeech-plugin) |
+| Vosk Speech | Offline recognition via WebAssembly (no cloud required) | [`voskspeech-plugin`](https://github.com/hyssostech/sketch-thru-plan-sdk-js/tree/main/plugins/speech/voskspeech-plugin) |
 
 ## ISpeechRecognizer Interface
 

@@ -30,10 +30,45 @@ jobs:
           token: ${{ secrets.STP_JS_PAT }}
           path: .stp-js
 
+      # Checkout the .NET SDK source to regenerate its API reference. Public repo,
+      # so no PAT is needed (unlike stp-js above).
+      - name: Checkout sketch-thru-plan-sdk-net source
+        uses: actions/checkout@v4
+        with:
+          repository: hyssostech/sketch-thru-plan-sdk-net
+          path: .sdk-net
+
       - uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: npm
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+
+      # XMLDoc2Markdown turns the assembly + its XML doc file into Docusaurus-ready
+      # markdown. Pinned so the docs build cannot change shape under us.
+      - name: Generate .NET API reference
+        run: |
+          set -euo pipefail
+          # publish, NOT build: a library build leaves only StpSDK.dll + JMSML.dll in
+          # bin/, so the generator cannot resolve Newtonsoft.Json et al and SILENTLY
+          # skips the core types (StpRecognizer, StpJsonRpcConnector, the services).
+          # publish copies every dependency alongside, and generation goes 72/9-failed
+          # -> 87/0-failed.
+          dotnet publish .sdk-net/src/StpSDK.JsonRpc/StpSDK.csproj -c Release -f net8.0 -o .sdk-net-publish
+          dotnet tool install --global XMLDoc2Markdown --version 6.0.0
+          export PATH="$PATH:$HOME/.dotnet/tools"
+          rm -rf docs/api-net && mkdir -p docs/api-net
+          cd .sdk-net-publish
+          xmldoc2md StpSDK.dll --output "$GITHUB_WORKSPACE/docs/api-net"
+          cd "$GITHUB_WORKSPACE"
+          # Normalise intra-doc links AND guard against a silent collapse: a short run
+          # means the assembly or its dependencies failed to load, and the site would
+          # otherwise deploy with the .NET API reference quietly missing.
+          node scripts/normalize-net-api-links.mjs docs/api-net
 
       - name: Install dependencies
         run: npm ci

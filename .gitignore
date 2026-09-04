@@ -10,6 +10,8 @@
 
 # SDK source checkout (used by CI)
 .stp-js
+.sdk-net
+.sdk-net-publish
 
 # Misc
 .DS_Store

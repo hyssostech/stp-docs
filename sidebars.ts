@@ -14,6 +14,7 @@ const sidebars: SidebarsConfig = {
         'guides/symbols-and-rendering',
         'guides/symbology-and-the-wire',
         'guides/silent-failures',
+        'guides/integration-troubleshooting',
         'guides/tasks',
         'guides/task-org',
         'guides/roles',

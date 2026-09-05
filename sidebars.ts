@@ -12,6 +12,7 @@ const sidebars: SidebarsConfig = {
       link: { type: 'generated-index', description: 'In-depth guides for STP SDK features.' },
       items: [
         'guides/symbols-and-rendering',
+        'guides/symbology-and-the-wire',
         'guides/tasks',
         'guides/task-org',
         'guides/roles',

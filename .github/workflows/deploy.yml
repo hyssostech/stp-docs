@@ -22,12 +22,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # Checkout stp-js source inside workspace for TypeDoc API reference generation
-      - name: Checkout stp-js SDK source
+      # Checkout the JS SDK source for TypeDoc API reference generation.
+      # PUBLIC repo, so NO token: this checkout used to point at the private
+      # hyssostech/stp-js with secrets.STP_JS_PAT, and when that PAT expired the
+      # docs silently stopped deploying for six months (2026-02-26 -> 2026-09-04).
+      # The SDK source now lives here, so the credential is gone for good.
+      - name: Checkout JS SDK source
         uses: actions/checkout@v4
         with:
-          repository: hyssostech/stp-js
-          token: ${{ secrets.STP_JS_PAT }}
+          repository: hyssostech/sketch-thru-plan-sdk-js
           path: .stp-js
 
       # Checkout the .NET SDK source to regenerate its API reference. Public repo,

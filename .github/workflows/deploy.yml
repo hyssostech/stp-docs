@@ -5,6 +5,14 @@ on:
     branches: [main]
   repository_dispatch:
     types: [sdk-source-updated]
+  # The SDK lives in another repository, so a change there does not push here.
+  # The dispatch above is the immediate path, but it needs a cross-repo PAT in
+  # sketch-thru-plan-sdk-js - and that credential class is exactly what froze
+  # this site for six months when it expired (2026-02-26 to 2026-09-04).
+  # This schedule is the credential-free floor: even with no PAT anywhere, the
+  # API reference is never more than a day behind the SDK source.
+  schedule:
+    - cron: "17 5 * * *"   # daily, 05:17 UTC - off the hour to avoid the rush
   workflow_dispatch:
 
 permissions:

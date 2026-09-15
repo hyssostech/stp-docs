@@ -57,7 +57,7 @@ jobs:
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: 8.0.x
+          dotnet-version: 10.0.x
 
       # XMLDoc2Markdown turns the assembly + its XML doc file into Docusaurus-ready
       # markdown. Pinned so the docs build cannot change shape under us.
@@ -69,7 +69,21 @@ jobs:
           # skips the core types (StpRecognizer, StpJsonRpcConnector, the services).
           # publish copies every dependency alongside, and generation goes 72/9-failed
           # -> 87/0-failed.
-          dotnet publish .sdk-net/src/StpSDK.JsonRpc/StpSDK.csproj -c Release -f net8.0 -o .sdk-net-publish
+          # The TFM is DERIVED from the csproj, not written here. It used to say
+          # `-f net8.0`; sdk-net moved to net10.0 and this build failed with
+          # NETSDK1005 ("doesn't have a target for 'net8.0'") on the very next
+          # scheduled run, after seven consecutive green days. A framework named
+          # in ANOTHER repository's workflow is a framework nobody there will
+          # remember to update - no gate in either SDK repo can see this file.
+          project=.sdk-net/src/StpSDK.JsonRpc/StpSDK.csproj
+          tfms="$(grep -o '<TargetFrameworks>[^<]*' "$project" | head -n 1 | cut -d'>' -f2)"
+          tfm="$(echo "$tfms" | tr ';' '\n' | grep -v '^netstandard' | head -n 1 || true)"
+          if [ -z "$tfm" ]; then
+            echo "::error::no non-netstandard TargetFramework in $project (got '$tfms')"
+            exit 1
+          fi
+          echo "publishing $project for $tfm"
+          dotnet publish "$project" -c Release -f "$tfm" -o .sdk-net-publish
           dotnet tool install --global XMLDoc2Markdown --version 6.0.0
           export PATH="$PATH:$HOME/.dotnet/tools"
           rm -rf docs/api-net && mkdir -p docs/api-net

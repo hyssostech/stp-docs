@@ -5,6 +5,7 @@ const sidebars: SidebarsConfig = {
     'intro',
     'installation',
     'getting-started',
+    'getting-started-dotnet',
     {
       type: 'category',
       label: 'Guides',
@@ -15,6 +16,10 @@ const sidebars: SidebarsConfig = {
         'guides/symbology-and-the-wire',
         'guides/silent-failures',
         'guides/integration-troubleshooting',
+        'guides/errors-and-timeouts',
+        'guides/events-and-ordering',
+        'guides/connection-lifecycle',
+        'guides/timing-and-synchronization',
         'guides/tasks',
         'guides/task-org',
         'guides/roles',
@@ -55,6 +60,7 @@ const sidebars: SidebarsConfig = {
       link: { type: 'generated-index', description: 'API reference, symbol properties, and changelog.' },
       items: [
         'reference/json-api',
+        'reference/rest-connector',
         'reference/symbol-properties',
         'reference/changelog',
       ],

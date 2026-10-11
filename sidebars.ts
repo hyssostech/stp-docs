@@ -23,6 +23,7 @@ const sidebars: SidebarsConfig = {
         'guides/tasks',
         'guides/task-org',
         'guides/roles',
+        'guides/coas',
         'guides/scenarios',
         'guides/sessions',
         'guides/custom-commands',
@@ -60,6 +61,7 @@ const sidebars: SidebarsConfig = {
       link: { type: 'generated-index', description: 'API reference, symbol properties, and changelog.' },
       items: [
         'reference/json-api',
+        'reference/method-safety',
         'reference/rest-connector',
         'reference/symbol-properties',
         'reference/changelog',

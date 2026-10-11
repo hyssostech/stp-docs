@@ -4,6 +4,7 @@ const sidebars: SidebarsConfig = {
   docsSidebar: [
     'intro',
     'installation',
+    'running-stp',
     'getting-started',
     'getting-started-dotnet',
     {

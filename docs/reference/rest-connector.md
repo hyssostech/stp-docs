@@ -35,7 +35,7 @@ clients as server-sent events.
 | `GET /api/v1/symbol/{poid}` | Read one symbol |
 | `PUT /api/v1/symbol/{poid}` | Update one symbol, or create it if there is no live symbol with that poid |
 | `DELETE /api/v1/symbol/{poid}` | Delete one symbol |
-| `POST /api/v1/task`, `GET /api/v1/task`, `GET`/`PUT`/`DELETE /api/v1/task/{poid}` | The same operations for tasks, with one difference: `PUT` replaces the task, deleting the old one and creating a new one. The response gives `previousPoid` and the new `poid`. |
+| `POST /api/v1/task`, `GET /api/v1/task`, `GET`/`PUT`/`DELETE /api/v1/task/{poid}` | The same operations for tasks. `PUT` updates the task in place and keeps its `poid`; with no task of that poid it creates one under it (`201`). Fields the body leaves out (`when.phase_name`, `execution_condition` and `trigger_ref`, `metadata`, `confirmed`) keep their stored values, and fields it sets replace them. The response gives `poid` and `previousPoid`, which always equals `poid` (kept for compatibility; before STP-1267 a `PUT` replaced the task under a new poid). |
 | `POST /api/v1/speechandsketch`, `POST /api/v1/speechandsketch/multi` | Recognition requests. The payloads are in the OpenAPI document. |
 | `GET /api/v1/events` | Server-sent event stream of changes. See [Event stream](#event-stream). |
 | `GET /api/v1/health` | `200` when the connector is connected to STP, `408` when it is not |

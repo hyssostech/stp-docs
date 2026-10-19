@@ -103,6 +103,43 @@ Task edits performed via a client UI (e.g., a Task Editor or Sync Matrix) need t
 Update your UI only in response to STP events (not immediately on user action). This keeps all connected clients consistent with the Engine's state.
 :::
 
+## Task history
+
+STP keeps a history for each task: one entry per change (created, edited,
+retasked, confidence, confirmed, unconfirmed, alternate chosen, deleted,
+undone) and the comments people add. The history outlives the task, so a
+deleted task's poid still returns it.
+
+Over the JSON-RPC API:
+
+| Method | Params | Result |
+|--------|--------|--------|
+| `GetTaskHistory` | `taskPoid` | The entries, newest first, each as `{ poid, entry }` |
+| `AddTaskComment` | `taskPoid`, `text` | The new entry's poid |
+| `EditTaskComment` | `entryPoid`, `text` | `true` |
+| `DeleteTaskComment` | `entryPoid` | `true` |
+
+STP sends `TaskEventAdded` when an entry is added (also for each entry of a
+loaded plan) and `TaskEventModified` when a comment is edited or deleted. Both
+carry `poid` (the entry's), `entry` and `batchId`.
+
+An `entry` has `task` (the task's poid), `utc`, `kind`, `origin` (`system` for
+entries STP writes, `user` for comments), `author`, `role`, `source`, `text`,
+`detail` (kind-specific details as a JSON string), `edited` and `deleted`.
+
+- **Comments need a user.** A client names its user in the `user` param of
+  `Register`. STP stamps each comment with that user, the role and the time;
+  a client that sent no user cannot comment.
+- **Only a comment's author can edit or delete it.** An edit keeps the earlier
+  text as a revision. A delete leaves a tombstone (`deleted` set, no text). A
+  deleted comment cannot be edited.
+- **Entries STP writes cannot be changed.** A refused request comes back with
+  `success: false` and STP's reason.
+
+In the .NET SDK the same operations are `GetTaskHistoryAsync`,
+`AddTaskCommentAsync`, `EditTaskCommentAsync` and `DeleteTaskCommentAsync` on
+`StpRecognizer`, with the `OnTaskEventAdded` and `OnTaskEventModified` events.
+
 ## Cached State
 
 STP caches symbols across connections to support collaboration. To start with a clean slate:

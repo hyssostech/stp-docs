@@ -33,9 +33,9 @@ clients as server-sent events.
 | `POST /api/v1/symbol` | Add one symbol |
 | `GET /api/v1/symbol` | List the live symbols |
 | `GET /api/v1/symbol/{poid}` | Read one symbol |
-| `PUT /api/v1/symbol/{poid}` | Update one symbol, or create it if there is no live symbol with that poid |
+| `PUT /api/v1/symbol/{poid}` | Update one symbol, or create it if there is no live symbol with that poid. The body is the whole symbol: fields an earlier whole-object write set and this body leaves out are cleared, unless another client changed them since. |
 | `DELETE /api/v1/symbol/{poid}` | Delete one symbol |
-| `POST /api/v1/task`, `GET /api/v1/task`, `GET`/`PUT`/`DELETE /api/v1/task/{poid}` | The same operations for tasks, with one difference: `PUT` replaces the task, deleting the old one and creating a new one. The response gives `previousPoid` and the new `poid`. |
+| `POST /api/v1/task`, `GET /api/v1/task`, `GET`/`PUT`/`DELETE /api/v1/task/{poid}` | The same operations for tasks. `PUT` updates the task in place and keeps its `poid`; with no task of that poid it creates one under it (`201`). Fields the body leaves out (`when.phase_name`, `execution_condition` and `trigger_ref`, `metadata`, `confirmed`) keep their stored values, and fields it sets replace them. The response gives `poid` and `previousPoid`, which always equals `poid` (kept for compatibility; before STP-1267 a `PUT` replaced the task under a new poid). |
 | `POST /api/v1/speechandsketch`, `POST /api/v1/speechandsketch/multi` | Recognition requests. The payloads are in the OpenAPI document. |
 | `GET /api/v1/events` | Server-sent event stream of changes. See [Event stream](#event-stream). |
 | `GET /api/v1/health` | `200` when the connector is connected to STP, `408` when it is not |
@@ -108,10 +108,19 @@ answered with `400` and a problem description.
 }
 ```
 
+- **`name` applies only on a wipe or with `time`.** The scenario is renamed
+  only by a post that wipes it (`?replace=true`) or one that carries a `time`
+  block; otherwise `name` is ignored and GET keeps answering the active
+  scenario's name.
 - **`id` gives a symbol a stable identity.** The connector derives the
   symbol's poid from it, so posting the same `id` again updates that symbol
   instead of adding a second one. Tasks name symbols by these ids in `who` and
   `tgs`. A missing or duplicated `id` is reported as an error.
+- **A task's own `id` is optional.** When a task carries one, its poid is
+  derived from it, so posting the same task `id` again updates that task, and
+  `GET /api/v1/scenario`, `GET /api/v1/task` and `GET /api/v1/task/{poid}`
+  return the `id` as it was posted. A `PUT` of the task keeps it. A task
+  posted without an `id` answers `"id": null`.
 - **`task_type`** must be a task name STP knows. An unknown value is reported in
   the response. Task times are slot indexes. See [Timing and
   synchronization](../guides/timing-and-synchronization.md#rest-connector-the-scenario-time-block).
@@ -129,11 +138,54 @@ answered with `400` and a problem description.
 | `?mode=strict` | Reject the whole request (`400`) if validation finds any error. The default, permissive mode, applies what it can and reports the rest. |
 | `?mode=dryrun` | Validate and report as a permissive post would, but apply nothing. Answers `200` instead of `201`, and `details.wouldDelete` gives the number of resident objects the post would remove (`total`, `byType`). |
 | `X-Scenario-Seq` header | Optional positive, increasing number. A post whose number is not greater than the last one applied is rejected with `409`, so a slow, older request cannot overwrite a newer one. |
+| `X-Scenario-Supersede: off` header | Keeps this whole-scenario post from being superseded by a newer one (see [Superseded posts](#superseded-posts)). |
 
 `append=true` together with `replace=true` is rejected with `400`. **An empty
 payload without `append=true` wipes the scenario.** Read
 [Silent failures](../guides/silent-failures.md) before relying on the default
 mode.
+
+### Superseded posts
+
+Requests that change the scenario are applied one at a time, in the order they
+arrive. Each one (scenario, ORBAT, symbol and task writes) is answered with an
+`X-Scenario-Ticket` header: its arrival number.
+
+When a whole-scenario post (a reconcile, `?replace=true`, or the empty-payload
+wipe) is about to apply, it supersedes the older whole-scenario posts that have
+not finished, so rapid posts end at the last one:
+
+- An older post still waiting is answered `409` at once and applies nothing.
+- An older post already running is stopped between objects. What it applied
+  stays applied, and it is answered `409`.
+- If a read (`GET`) arrived between the two posts, the older post is not
+  stopped, so the read sees its plan whole.
+
+Appends (`?append=true`), ORBAT posts, single-object writes and dry runs are
+never superseded. A post sent with `X-Scenario-Supersede: off` is not
+superseded either. A superseded post's `X-Scenario-Seq` is not recorded.
+
+The `409` body of a superseded post is plain JSON, not a problem description:
+
+```json
+{
+  "status": "superseded",
+  "ticket": 41,
+  "by": { "ticket": 42 },
+  "generation": 7,
+  "started": true,
+  "applied": 1,
+  "rejected": 0,
+  "unchanged": 0,
+  "notSent": 2
+}
+```
+
+`ticket` is this post's `X-Scenario-Ticket` and `by.ticket` the post that
+superseded it. `started` is `false` when the post never began applying.
+`applied`, `rejected` and `unchanged` count its objects, and `notSent` the
+objects it never sent. Tell this `409` from the `X-Scenario-Seq` one by
+`status == "superseded"`.
 
 ### The response envelope
 
@@ -165,6 +217,17 @@ true` means a permissive post found errors and applied what it could.
 created and so on) and, after a reconcile or an append, `deleted`: how many
 resident objects were removed, by type.
 
+Two more entries in `details` appear only when they are not empty:
+
+- **`rejected`**: writes STP refused while applying the post (`total`, and
+  `items` with each one's `poid`, `type`, `verb` and `reason`). A post with
+  refused writes answers `partial: true`.
+- **`conflicts`**: fields the post left out that STP did not clear, because
+  another client changed them after this writer set them (`total`, and `items`
+  with each one's `poid`, `type` and `key`). This is not an error: the rest of
+  each object was applied. A reconcile otherwise clears the fields that an
+  earlier post set and this one leaves out.
+
 Responses that read or change the scenario carry an `X-Scenario-Generation`
 header and a matching weak `ETag`. The number increases each time a change is
 applied through the connector. It does not count changes made by other
@@ -177,7 +240,7 @@ clients.
 | `201 Created` | The post was applied (check `issues` and `partial`) |
 | `200 OK` | Dry run (`?mode=dryrun`) |
 | `400 Bad Request` | Strict-mode validation errors, conflicting `append` and `replace`, a malformed `X-Scenario-Seq` |
-| `409 Conflict` | `X-Scenario-Seq` not newer than the last applied post |
+| `409 Conflict` | `X-Scenario-Seq` not newer than the last applied post, or the post was superseded by a newer whole-scenario post (body `status: "superseded"`; see [Superseded posts](#superseded-posts)) |
 | `408 Request Timeout` | The connector could not connect to STP |
 | `503 Service Unavailable` | Another request held the scenario too long (comes with `Retry-After: 5`), or communication with STP failed while the post was being applied |
 | `500 Internal Server Error` | Unexpected failure while processing |

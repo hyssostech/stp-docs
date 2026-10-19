@@ -108,6 +108,10 @@ answered with `400` and a problem description.
 }
 ```
 
+- **`name` applies only on a wipe or with `time`.** The scenario is renamed
+  only by a post that wipes it (`?replace=true`) or one that carries a `time`
+  block; otherwise `name` is ignored and GET keeps answering the active
+  scenario's name.
 - **`id` gives a symbol a stable identity.** The connector derives the
   symbol's poid from it, so posting the same `id` again updates that symbol
   instead of adding a second one. Tasks name symbols by these ids in `who` and

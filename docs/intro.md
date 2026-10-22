@@ -40,18 +40,18 @@ Plans designed in STP are executable with little additional user intervention ot
 ## Architecture
 
 ```
-┌─────────────┐     ┌──────────────┐     ┌──────────────┐
+┌──────────────┐     ┌──────────────┐     ┌───────────────┐
 │  Browser App │◄───►│  STP SDK     │◄───►│  STP Engine   │
 │  (Map + UI)  │     │  (JS/TS)     │     │  (Server)     │
-└─────────────┘     └──────────────┘     └──────────────┘
+└──────────────┘     └──────────────┘     └───────────────┘
        │                    │
        ▼                    ▼
- ┌───────────┐     ┌───────────────┐
+ ┌────────────┐     ┌───────────────┐
  │ Map Plugin │     │ Speech Plugin │
  │ (Leaflet,  │     │ (Azure, AWS)  │
  │  Google,   │     └───────────────┘
  │  ArcGIS)   │
- └───────────┘
+ └────────────┘
 ```
 
 The SDK communicates with the STP Engine via a **connector plugin** (WebSocket by default). Map presentation and speech recognition are handled by replaceable plugins.
